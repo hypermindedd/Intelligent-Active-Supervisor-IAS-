@@ -1,0 +1,14 @@
+{
+  "order_id": "ORD-20260910-001",
+  "authority": "ORCHESTRATOR",
+  "action": "GO",
+  "workstream": "WS-01",
+  "issued_at": "2026-09-10T09:29:00Z",
+  "directive": "Proceed with Shared Architecture — Workflow & Event Contract v0.1. All implementation workstreams WS-02 through WS-11 remain BLOCKED until the contract is frozen or an explicit scoped unlock is issued.",
+  "evidence": [
+    "control/workstreams.json",
+    "contracts/README.md",
+    "Smart Supervisor Data Contract v0.1.0"
+  ],
+  "supersedes": null
+}
