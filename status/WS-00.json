@@ -1,16 +1,16 @@
 {
   "schema_version": "0.1.0",
   "workstream": "WS-00",
-  "reported_at": "2026-09-10T10:15:00Z",
+  "reported_at": "2026-09-10T10:22:00Z",
   "reporter": {"account":"shared","worker":"IAS Orchestrator"},
-  "claimed_progress": 88,
+  "claimed_progress": 92,
   "observed_gate": "REVIEW",
   "execution_mode": "CHAT",
-  "contract_versions": ["Control Plane v0.1", "Data Contract v0.1.0"],
-  "deliverables": ["GitHub control plane", "Notion IAS command center", "Governance Gate", "Warden/Human command buses", "2H/Daily/Debugger schedules", "Cross-account status protocol"],
-  "tests": ["Negative PR #4: BLOCKED WS-02 correctly rejected by Governance Gate"],
-  "blockers": ["main branch protection/ruleset still requires human configuration", "direct Warden/Claude identity/connector not visible from current connected surfaces", "Reports project chat cannot be programmatically created"],
+  "contract_versions": ["Project Instructions v4", "Data Contract v0.1.0", "Control Plane v0.1"],
+  "deliverables": ["GitHub executable control plane", "Notion IAS command center", "canonical Project Instructions/Data Contract in GitHub", "Governance Gate", "CODEOWNERS", "Warden/Human command buses", "2H/Daily/Debugger schedules", "Cross-account worker status protocol", "Worker bootstrap prompt", "negative enforcement test"],
+  "tests": ["PR #4: change to BLOCKED WS-02 rejected by IAS Governance Gate with exit code 42"],
+  "blockers": ["P0 Issue #3: main branch protection/ruleset requires human configuration", "P0 Issue #5: actual Warden/Claude identity must be connected/shared", "P0 Issue #6: Reports project chat must be manually created"],
   "open_decisions": [],
-  "next_action": "Human enables main branch protection; then WS-01 proceeds with Workflow & Event Contract v0.1.",
-  "refs": ["issues/1", "issues/2", "issues/3", "pull/4", "control/orders/ORD-20260910-001.json"]
+  "next_action": "Complete P0 human actions while WS-01 proceeds with Workflow & Event Contract v0.1 under ORD-20260910-001.",
+  "refs": ["issues/1", "issues/2", "issues/3", "issues/5", "issues/6", "pull/4", "control/orders/ORD-20260910-001.json", "contracts/project-instructions-v4-canonical.md", "contracts/data-contract-v0.1-canonical.md"]
 }
