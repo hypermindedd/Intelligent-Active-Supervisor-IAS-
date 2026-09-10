@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.1.0",
+  "updated_at": "2026-09-10T09:30:00Z",
+  "locks": [],
+  "rules": {
+    "human_lock_release_requires": "Explicit HUMAN UNLOCK order referencing lock_id",
+    "warden_lock_release_requires": "Explicit WARDEN UNLOCK directive referencing lock_id",
+    "blocked_release_requires": "Dependency evidence plus ORCHESTRATOR or HUMAN GO order",
+    "done_reopen_requires": "Explicit HUMAN or ORCHESTRATOR REWORK/GO order",
+    "lock_fields": ["lock_id","workstream","type","reason","issued_by","issued_at","status","release_authority","release_order_id"]
+  }
+}
