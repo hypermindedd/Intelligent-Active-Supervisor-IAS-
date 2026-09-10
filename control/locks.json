@@ -1,7 +1,19 @@
 {
   "schema_version": "0.1.0",
-  "updated_at": "2026-09-10T09:30:00Z",
-  "locks": [],
+  "updated_at": "2026-09-10T18:15:00Z",
+  "locks": [
+    {
+      "lock_id": "WDN-20260910-001",
+      "workstream": "GLOBAL",
+      "type": "WARDEN_LOCK",
+      "reason": "Governance Gate v0.1 is self-modifiable/fail-open; release of WS-02 through WS-11 is blocked until Gate Hardening v0.2 is merged, required negative tests pass, and Warden issues an explicit UNLOCK referencing WDN-20260910-001.",
+      "issued_by": "WARDEN",
+      "issued_at": "2026-09-10T10:40:00Z",
+      "status": "ACTIVE",
+      "release_authority": "WARDEN UNLOCK referencing WDN-20260910-001",
+      "release_order_id": null
+    }
+  ],
   "rules": {
     "human_lock_release_requires": "Explicit HUMAN UNLOCK order referencing lock_id",
     "warden_lock_release_requires": "Explicit WARDEN UNLOCK directive referencing lock_id",
