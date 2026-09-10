@@ -1,0 +1,10 @@
+# IAS sensitive governance surfaces — Human Leadership review required
+/control/ @hypermindedd
+/contracts/ @hypermindedd
+/warden/ @hypermindedd
+/debugger/ @hypermindedd
+/scripts/governance_gate.py @hypermindedd
+/.github/workflows/governance-gate.yml @hypermindedd
+/.github/CODEOWNERS @hypermindedd
+
+# Add Warden's GitHub username here once its concrete account is connected/known.
