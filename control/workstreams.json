@@ -1,15 +1,15 @@
 {
   "schema_version": "0.1.0",
   "project": "IAS",
-  "updated_at": "2026-09-10T10:21:00Z",
+  "updated_at": "2026-09-10T12:19:00Z",
   "rules": {
     "default_gate": "BLOCKED",
     "allowed_gates": ["GO", "WORK", "REVIEW", "HUMAN_LOCK", "WARDEN_LOCK", "BLOCKED", "DONE"],
     "allowed_execution_modes": ["CHAT", "WORK", "N8N", "CODEX", "MANUAL"]
   },
   "workstreams": [
-    {"code":"WS-00","name":"IAS Control Plane & Governance","gate":"REVIEW","execution_mode":"CHAT","progress":92,"depends_on":[],"paths":["control/","warden/","debugger/","reports/","scripts/",".github/workflows/"]},
-    {"code":"WS-01","name":"Shared Architecture — Workflow & Event Contract","gate":"GO","execution_mode":"CHAT","progress":0,"depends_on":["WS-00"],"paths":["contracts/workflow-event/"]},
+    {"code":"WS-00","name":"IAS Control Plane & Governance","gate":"REVIEW","execution_mode":"CHAT","progress":55,"depends_on":[],"paths":["control/","warden/","debugger/","reports/","scripts/",".github/workflows/"]},
+    {"code":"WS-01","name":"Shared Architecture — Workflow & Event Contract","gate":"GO","execution_mode":"CHAT","progress":65,"depends_on":["WS-00"],"paths":["contracts/workflow-event/"]},
     {"code":"WS-02","name":"CRM Core & Identity Resolution","gate":"BLOCKED","execution_mode":"WORK","progress":0,"depends_on":["WS-01"],"paths":["src/crm/","workflows/core/"]},
     {"code":"WS-03","name":"AI Voice & CRM Extraction","gate":"BLOCKED","execution_mode":"WORK","progress":0,"depends_on":["WS-01"],"paths":["src/ai/","workflows/ai/"]},
     {"code":"WS-04","name":"Customer Reception","gate":"BLOCKED","execution_mode":"WORK","progress":0,"depends_on":["WS-01","WS-02","WS-08"],"paths":["src/customer/","workflows/customer/"]},
