@@ -1,0 +1,36 @@
+{
+  "order_id": "HUM-20260910-002",
+  "authority": "HUMAN",
+  "action": "GO",
+  "workstream": "GLOBAL",
+  "order_type": "TEAM_CHAT_EXECUTION_AUTHORIZATION",
+  "issued_at": "2026-09-10T13:12:00Z",
+  "issued_by": "Human Leadership",
+  "scope": {
+    "authorized_actors": "Designated IAS team members and accounts",
+    "authorization": "May open and operate assigned IAS project chats/work sessions on behalf of Human Leadership, subject to the current authoritative Gate and Execution Mode.",
+    "delegates_human_authority": false,
+    "changes_workstream_gates": false,
+    "self_unlock_allowed": false
+  },
+  "current_permissions": {
+    "WS-00": "REVIEW scope only: governance REWORK/correction/verification is authorized.",
+    "WS-01": "GO: substantive Workflow & Event Contract work is authorized within canonical contract scope.",
+    "WS-02..WS-11": "BLOCKED: chat may be opened for mandatory preflight, read-only analysis, planning, test/mock preparation, and dependency clarification only. No implementation writes to owned workstream paths, no release, and no shared-contract redefinition until explicit valid unlock/GO is recorded."
+  },
+  "worker_requirements": [
+    "Run Mandatory IAS Preflight before substantive work.",
+    "State workstream code, current gate, execution mode, dependencies, locks, latest orders, and next authorized action.",
+    "Publish material status with actor/account identity and evidence.",
+    "Stop immediately when a newer Human, Warden, Orchestrator, or Debugger order narrows or blocks scope.",
+    "Do not issue HUMAN directives unless Human Leadership separately delegates that authority."
+  ],
+  "evidence": [
+    "GitHub Issue #2 comment HUM-20260910-002",
+    "control/workstreams.json",
+    "control/locks.json",
+    "control/orders/ORD-20260910-001.json",
+    "HUM-20260910-001",
+    "GitHub Issue #9"
+  ]
+}
