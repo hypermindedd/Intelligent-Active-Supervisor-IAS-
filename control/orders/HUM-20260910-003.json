@@ -1,0 +1,21 @@
+{
+  "order_id": "HUM-20260910-003",
+  "authority": "HUMAN",
+  "action": "GO",
+  "workstream": "WS-00",
+  "scope": "Gate Hardening v0.2 only",
+  "issued_at": "2026-09-10T13:12:00Z",
+  "directive": "Claude/Warden is authorized to design, review, and issue imperative patch/implementation instructions for WS-00 Gate Hardening v0.2. If the Claude/Warden-side GitHub connector is read-only or returns 403, use the IAS Proxy Write Lane through the Warden Command Bus and an authorized write-capable IAS executor may apply those changes on Human Leadership's behalf.",
+  "constraints": [
+    "Does not release WDN-20260910-001",
+    "Does not unlock WS-02 through WS-11",
+    "Does not authorize product or shared-contract changes outside WS-00 corrective scope",
+    "After hardening evidence passes, return WS-00 to REVIEW for verification"
+  ],
+  "evidence": [
+    "GitHub Issue #2 Human Command Bus",
+    "GitHub Issue #1 Warden Command Bus",
+    "GitHub Issue #9 Active Debugger order",
+    "GitHub Issue #12 IAS 2H_CHANGE"
+  ]
+}
