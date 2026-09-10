@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1.0",
+  "workstream": "WS-00",
+  "reported_at": "2026-09-10T10:15:00Z",
+  "reporter": {"account":"shared","worker":"IAS Orchestrator"},
+  "claimed_progress": 88,
+  "observed_gate": "REVIEW",
+  "execution_mode": "CHAT",
+  "contract_versions": ["Control Plane v0.1", "Data Contract v0.1.0"],
+  "deliverables": ["GitHub control plane", "Notion IAS command center", "Governance Gate", "Warden/Human command buses", "2H/Daily/Debugger schedules", "Cross-account status protocol"],
+  "tests": ["Negative PR #4: BLOCKED WS-02 correctly rejected by Governance Gate"],
+  "blockers": ["main branch protection/ruleset still requires human configuration", "direct Warden/Claude identity/connector not visible from current connected surfaces", "Reports project chat cannot be programmatically created"],
+  "open_decisions": [],
+  "next_action": "Human enables main branch protection; then WS-01 proceeds with Workflow & Event Contract v0.1.",
+  "refs": ["issues/1", "issues/2", "issues/3", "pull/4", "control/orders/ORD-20260910-001.json"]
+}
