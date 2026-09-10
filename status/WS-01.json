@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1.0",
+  "workstream": "WS-01",
+  "reported_at": "2026-09-10T10:15:00Z",
+  "reporter": {"account":"next-chat","worker":"unassigned"},
+  "claimed_progress": 0,
+  "observed_gate": "GO",
+  "execution_mode": "CHAT",
+  "contract_versions": ["Data Contract v0.1.0", "Control Plane v0.1"],
+  "deliverables": [],
+  "tests": [],
+  "blockers": [],
+  "open_decisions": ["Workflow & Event Contract v0.1 must define event matrix, boundaries, retries, idempotency, mocks and integration order"],
+  "next_action": "Open chat 01 and create/freeze Workflow & Event Contract v0.1.",
+  "refs": ["control/orders/ORD-20260910-001.json", "contracts/control-plane-v0.1.md"]
+}
