@@ -1,0 +1,19 @@
+{
+  "order_id": "ORD-20260910-004",
+  "authority": "ORCHESTRATOR",
+  "action": "REWORK",
+  "workstream": "GLOBAL",
+  "issued_at": "2026-09-10T18:15:00Z",
+  "directive": "Reconcile WDN-20260910-009 and the latest DEBUGGER hold. WS-00 remains REVIEW under scoped HUM-20260910-003 corrective authority; sync control/workstreams.json and control/locks.json before management-plane claims. WS-01 is REVIEW and PR #8 must remain DRAFT until Gate Hardening v0.2 is merged and verified under the exact required status context. WS-02 through WS-14 remain BLOCKED. Do not release WDN-20260910-001 or redefine shared contracts. Fix the Main_protection required status context through Human Leadership without weakening the required check.",
+  "evidence": [
+    "WDN-20260910-009",
+    "HUM-20260910-003",
+    "DEBUGGER finding: HIGH — WS-01 auto-merge armed before Gate Hardening verification",
+    "PR #8 DRAFT",
+    "PR #13 Gate Hardening execution lane",
+    "control/workstreams.json stale on main",
+    "control/locks.json empty on main",
+    "WDN-20260910-004 Human-approved WS-12/13/14 additions"
+  ],
+  "supersedes": "ORD-20260910-003"
+}
