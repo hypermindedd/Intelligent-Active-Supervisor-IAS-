@@ -1,0 +1,1 @@
+Intentional IAS Active Debugger negative test after Main_protection activation. WS-02 is BLOCKED. This change must fail IAS Governance Gate and remain unmergeable into main.
