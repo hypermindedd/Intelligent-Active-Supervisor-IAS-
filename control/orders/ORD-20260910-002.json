@@ -1,0 +1,19 @@
+{
+  "order_id": "ORD-20260910-002",
+  "issued_at": "2026-09-10T12:19:00Z",
+  "issued_by": "ORCHESTRATOR",
+  "basis": [
+    "PR #8 current head 17c5fac34b2189807a20368e544ae80b478983bc",
+    "IAS Governance Gate run 34474811459 = SUCCESS",
+    "PR #8 contains FX-001..FX-025 plus fixtures/index.json",
+    "WDN-20260910-007 reconciliation addendum present",
+    "WDN-20260910-001 remains ACTIVE"
+  ],
+  "decisions": [
+    {"workstream":"WS-00","gate":"REVIEW","directive":"Continue Gate Hardening v0.2 corrective work only; no DONE claim and no downstream release."},
+    {"workstream":"WS-01","gate":"GO","directive":"Proceed with merge/freeze completion of PR #8; do not mark DONE until contract, reconciliation and all 25 fixtures are verified on authoritative main."},
+    {"workstream":"WS-02..WS-11","gate":"BLOCKED","directive":"No release. WDN-20260910-001 WARDEN_LOCK remains active in addition to dependency blocks."}
+  ],
+  "supersedes": ["Debugger temporary WS-01 REVIEW caused solely by missing FX-021..FX-025"],
+  "does_not_supersede": ["WDN-20260910-001","human authority"]
+}
